@@ -1,0 +1,14 @@
+[Unit]
+Description=Puma application server
+After=network.target
+
+[Service]
+User=vagrant
+WorkingDirectory=/home/vagrant/reddit
+Environment=PATH=/home/vagrant/.rvm/wrappers/reddit:$PATH
+ExecStart=/home/vagrant/.rvm/wrappers/reddit/bundle exec puma
+#ExecStop=/
+Type=simple
+[Install]
+WantedBy=multi-user.target
+
