@@ -2,7 +2,7 @@
 
 source ~/.rvm/scripts/rvm
 
-git clone https://github.com/Artemmkin/reddit.git
+git clone https://github.com/talino/infra.git reddit
 cd reddit && bundle install
 
 rvm alias create reddit ruby-2.4.1
